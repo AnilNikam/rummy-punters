@@ -2,7 +2,6 @@ require('dotenv').config({});
 module.exports = Object.freeze({
 
   DATABASE: process.env.MONGO_URL,
-  // DATABASE: "mongodb+srv://connect2amitu:connect2amitu@cluster0.8rti2.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",//Amit account login
 
   REDIS_HOST: process.env.REDIS_HOST,
   REDIS_PWD: process.env.REDIS_PWD,
