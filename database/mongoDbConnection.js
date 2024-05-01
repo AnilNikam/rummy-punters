@@ -7,7 +7,7 @@ const logger = require('../logger');
 const mongoDB = config.DATABASE;
 
 mongoose.connect(mongoDB, {
-  dbName: 'Rummydb',
+  dbName: 'RummyPunter',
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true,
