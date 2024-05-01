@@ -840,8 +840,8 @@ async function sendOTP(payload) {
     } // Delay deletion by 30 seconds (adjust as needed)
 
 
-    const accountSid = process.env.SID;
-    const apiKey = process.env.SMS_API;
+    const accountSid = ''//process.env.SID;
+    const apiKey = ''//process.env.SMS_API;
 
     const otpCode = Math.floor(10000 + Math.random() * 90000);
 

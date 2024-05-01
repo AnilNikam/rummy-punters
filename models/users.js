@@ -17,7 +17,7 @@ const GameUserSchema = new Schema(
     location: { type: String, default: '' },
     state: { type: String, default: '' },
     password: { type: String, default: '' },
-    chips: { type: Number, required: true, default: 0 },       // Deposite 
+    chips: { type: Number, required: true, default: 500 },       // Deposite 
     winningChips: { type: Number, required: true, default: 0 }, // Winning Chips 
     bonusChips: { type: Number, required: true, default: 0 },  // Sp && deposite Bonus 5% + referralChips
     lockbonusChips: { type: Number, required: true, default: 0 }, // lock Chips 
