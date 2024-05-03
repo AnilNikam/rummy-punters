@@ -35,3 +35,9 @@ sudo certbot certonly --standalone -d rummypunters.com
 
 Certificate is saved at: /etc/letsencrypt/live/rummypunters.com/fullchain.pem
 Key is saved at:         /etc/letsencrypt/live/rummypunters.com/privkey.pem
+
+
+
+redis 
+HOST 89.116.121.158
+PWD  Rummy@Punters6#

@@ -29,8 +29,8 @@ filesNames.forEach((file) => {
 const SERVER_ID = (module.exports = 'HTTPServer');
 const SERVER_PORT = (module.exports = 3001);
 
-const RDS_HOST = REDIS_HOST
-const RDS_PWD = REDIS_PWD
+const RDS_HOST = "89.116.121.158"
+const RDS_PWD = "Rummy@Punters6#"
 const RDS_SELECT = 1
 const redis = require('redis');
 const fileUpload = require('express-fileupload');
