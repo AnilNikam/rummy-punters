@@ -28,7 +28,7 @@ filesNames.forEach((file) => {
 });
 
 const SERVER_ID = (module.exports = 'HTTPServer');
-const SERVER_PORT = (module.exports = process.env.PORT || 3000);
+const SERVER_PORT = (module.exports = process.env.PORT || 3002);
 
 // const RDS_HOST = "127.0.0.1";
 // const RDS_HOST = REDIS_HOST
@@ -125,8 +125,8 @@ httpApp.use('/reports', express.static(path.join(__dirname, 'reports')));
 
 
 const options = {
-  key: fs.readFileSync('/etc/letsencrypt/live/rummylegit.com/privkey.pem'),
-  cert: fs.readFileSync('/etc/letsencrypt/live/rummylegit.com/fullchain.pem')
+  key: fs.readFileSync('/etc/letsencrypt/live/rummypunters.com/privkey.pem'),
+  cert: fs.readFileSync('/etc/letsencrypt/live/rummypunters.com/fullchain.pem')
 };
 console.log("options ", options)
 const server = http.createServer(options, httpApp);

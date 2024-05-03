@@ -1,0 +1,37 @@
+
+Gamil Hostinger 
+
+rummypunters6@gmail.com
+Rummy@Punters6#
+
+
+
+IP 
+89.116.121.158
+
+PWD 
+Rummy@Punters6#
+
+
+
+Go Daddy
+User name 
+
+sahebprit
+Y9RE*rJFRf#.8XA
+
+
+rummypunters.com
+
+
+sudo nano /etc/nginx/sites-available/rummypunters.com
+
+
+sudo certbot --nginx -d rummypunters.com -d www.rummypunters.com
+
+
+sudo certbot certonly --standalone -d rummypunters.com
+
+
+Certificate is saved at: /etc/letsencrypt/live/rummypunters.com/fullchain.pem
+Key is saved at:         /etc/letsencrypt/live/rummypunters.com/privkey.pem
