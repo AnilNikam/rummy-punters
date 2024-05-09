@@ -36,17 +36,17 @@ const redis = require('redis');
 const fileUpload = require('express-fileupload');
 
 //setup redis is pending
-// (async () => {
-//   rClient = (module.exports = redis.createClient(6379, RDS_HOST));
-//   rClient.auth(RDS_PWD, function () { });
-//   rClient.select(1);
-//   // eslint-disable-next-line no-console
-//   rClient.on('error', (err) => console.log('Redis Client Error', err));
+(async () => {
+  rClient = (module.exports = redis.createClient(6379, RDS_HOST));
+  rClient.auth(RDS_PWD, function () { });
+  rClient.select(1);
+  // eslint-disable-next-line no-console
+  rClient.on('error', (err) => console.log('Redis Client Error', err));
 
-//   rClient.on('connect', () => {
-//     console.log('Redis Client connected')
-//   });
-// })();
+  rClient.on('connect', () => {
+    console.log('Redis Client connected')
+  });
+})();
 
 //const wallet = require('./controller/wallet');
 const socket = require('./controller/socket-server');

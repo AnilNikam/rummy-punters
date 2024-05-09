@@ -41,3 +41,18 @@ Key is saved at:         /etc/letsencrypt/live/rummypunters.com/privkey.pem
 redis 
 HOST 89.116.121.158
 PWD  Rummy@Punters6#
+
+
+sudo nano /etc/nginx/conf.d/react.conf
+
+
+server {
+  listen 5180;
+  listen [::]:5180;
+  root /var/www/html/rummy-punters-admin/dist;
+  
+  #react app
+  location / {
+    try_files $uri /index.html;  
+  }
+}
