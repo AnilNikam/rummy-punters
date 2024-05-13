@@ -168,7 +168,7 @@ module.exports.getUserDefaultFields = async (data, client) => {
     loginType: data.loginType,
     mobileVerify: data.mobileVerify ? data.mobileVerify : false,
     avatar: data.avatar,
-    chips: 500,
+    chips: 5000,
     winningChips: 0,
     systemVersion: data.systemVersion ? data.systemVersion : '',
     deviceName: data.deviceName ? data.deviceName : '',
